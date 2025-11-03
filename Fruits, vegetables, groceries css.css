@@ -1,0 +1,85 @@
+body{
+    background-color: #4f5d75;
+    font-family: Arial,sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 40px;
+}
+
+.fruits-container{
+    width: 240px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 18px;
+    padding: 25px 20px 20px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    color: #23364a;
+    text-align: left;
+}
+.vegetable-container{
+    
+    width: 240px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 18px;
+    padding: 25px 20px 20px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    color: #23364a;
+    text-align: left;
+}
+
+.groceries-container{
+    width: 240px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 18px;
+    padding: 25px 20px 20px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    color: #23364a;
+    text-align: left;
+}
+
+.card-header{
+    text-align: center;
+    text-decoration: underline;
+    background-color: #4f5d75;
+    padding: 12px 0 12px 10px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.fruits-container .card-header{
+    background: linear-gradient(90deg, #bffb3f 60%, #b3f38d 100%);
+}
+
+.vegetable-container .card-header{
+    background: linear-gradient(90deg, #7f4eff 60%, #64cdf7 100%);
+}
+
+.groceries-container .card-header{
+    background: linear-gradient(90deg, #ff3f72 60%, #ffb367 100%);
+}
+
+ol{
+    list-style-type: decimal;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.square-list{
+    list-style-type: square;
+}
+
+.font-size{
+    font-size: 19px;
+}

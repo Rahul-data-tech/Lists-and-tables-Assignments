@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+
+      .container {
+        width: 1300px;
+        background: linear-gradient(180deg, #071024 0%, #021627 100%);
+        margin: auto auto;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 18px;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        margin-left: 10px;
+        font-weight: 600;
+      }
+      .controls {
+        margin-right: 10px;
+      }
+      .top {
+        border-radius: 15px;
+        height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 500;
+        background-color: #9296ce;
+      }
+      input {
+        height: 20px;
+        border-radius: 15px;
+        border: 2px solid;
+        background-color: #17182e;
+      }
+      table {
+        width: 1300px;
+        background-color: #17182e;
+        color: white;
+        margin-left: 100px;
+      }
+      thead {
+        height: 50px;
+        font-size: 15px;
+        text-align: left;
+      }
+      tbody {
+        height: 200px;
+      }
+
+      .pending {
+        border-radius: 10px;
+        padding: 5px;
+        font-weight: 600;
+        color: #c6c610;
+      }
+
+      .Confirmed {
+        border-radius: 10px;
+        padding: 5px;
+        font-weight: 600;
+        color: #36670b;
+      }
+
+      .Reschedule {
+        border-radius: 10px;
+        padding: 5px;
+        font-weight: 600;
+        color: #a90f0f;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      button {
+        background-color: rgb(78, 76, 76);
+        border-radius: 8px;
+        color: wheat;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      button:hover{
+        background-color:#4a90e2;
+        border: 4px solid yellowgreen;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Reservations</h1>
+        <div class="controls">
+          <input
+            type="text"
+            placeholder="search name, phone, date"
+            id="verify"
+          />
+          <button class="top" type="submit">New Reservation</button>
+          <button class="top" type="reset">Reset</button>
+        </div>
+      </header>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Guest</th>
+          <th>Contact</th>
+          <th>Date & Time</th>
+          <th>No. of Guests</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Rahul Sharma <br />
+            <p>Birthday Party</p>
+          </td>
+          <td><p>+91 9876543210</p></td>
+          <td>
+            Nov 03, 2025 - 7:30 pm <br />
+            <p>Table request: Window</p>
+          </td>
+          <td>6</td>
+          <td class="pending">pending</td>
+          <td>
+            <button>View</button>
+            <button>Confirm</button>
+            <button>Cancel</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Aisha Khan <br />
+            <p>Anniversary Party</p>
+          </td>
+          <td><p>+91 9123456789</p></td>
+          <td>
+            Nov 05, 2025 - 8:00 pm <br />
+            <p>outdoors</p>
+          </td>
+          <td>6</td>
+          <td class="Confirmed">Confirmed</td>
+          <td>
+            <button>View</button>
+            <button>Edit</button>
+            <button>Cancel</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vikram Patel <br />
+            <p>Business Lunch</p>
+          </td>
+          <td><p>+91 7058131581</p></td>
+          <td>
+            Nov 01, 2025 - 11:15 pm <br />
+            <p>High-chair needed</p>
+          </td>
+          <td>4</td>
+          <td class="Reschedule">Cancelled</td>
+          <td>
+            <button>View</button>
+            <button>Reschedule</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
